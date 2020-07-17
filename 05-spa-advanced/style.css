@@ -1,0 +1,37 @@
+.page {
+    height: 100vh;
+    box-sizing: border-box; /* padding and marign will be part of the element's width instead of being added on */
+    will-change: transform;
+    transition: transform 0.5s ease-in;
+    position: absolute;
+    width:100%;
+}
+
+#page-1 {
+    background-color: aliceblue;    
+}
+
+#page-2 {
+    background-color:blanchedalmond;
+}
+
+#page-3 {
+    background-color:cornsilk;   
+}
+
+#page-4 {
+    background-color:palegreen;    
+}
+
+.hidden {
+    transform: translateX(-100%);
+}
+
+.show {
+    transform: translateX(0);
+}
+
+#all-pages {
+    position: relative;   
+
+}

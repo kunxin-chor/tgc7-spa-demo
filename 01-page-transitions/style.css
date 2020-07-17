@@ -1,0 +1,13 @@
+.box {
+    width: 60px;
+    height: 60px;
+    background-color: green;
+    will-change: height, width, background-color;
+}
+
+.stretch {
+    transition: width 2s linear, height 2s ease, background-color 1s linear;
+    height: 120px;
+    width: 120px;
+    background-color: red;
+}

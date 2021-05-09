@@ -1,38 +1,36 @@
-$("#page1-btn").click(function(){
-    // hide page 2
-    $("#page-2").removeClass('show'); // jQuery for element.classList.remove('shown')
-    $("#page-2").addClass('hidden'); // jQuery for element.cassList.add('hidden)
-    // hide page 3
-    $("#page-3").removeClass('show'); // jQuery for element.classList.remove('shown')
-    $("#page-3").addClass('hidden'); // jQuery for element.cassList.add('hidden)
+document.querySelector('#page1-btn').addEventListener('click', function(){
+    // hide all the pages
+    let pages = document.querySelectorAll('.page');
+    for (let p of pages) {
+        p.classList.remove('show')
+        p.classList.add('hidden')
+    }
 
     // show page 1
-    $("#page-1").removeClass('hidden');
-    $("#page-1").addClass('show')
+    document.querySelector('#page-1').classList.add('show')
+
 })
 
-$("#page2-btn").click(function(){
-    // hide page 1
-    $("#page-1").removeClass('show'); // jQuery for element.classList.remove('shown')
-    $("#page-1").addClass('hidden'); // jQuery for element.cassList.add('hidden)
-    // hide page 3
-    $("#page-3").removeClass('show'); // jQuery for element.classList.remove('shown')
-    $("#page-3").addClass('hidden'); // jQuery for element.cassList.add('hidden)
+document.querySelector('#page2-btn').addEventListener('click', function(){
+    // hide all the pages
+    let pages = document.querySelectorAll('.page');
+    for (let p of pages) {
+        p.classList.remove('show')
+    }
 
     // show page 2
-    $("#page-2").removeClass('hidden');
-    $("#page-2").addClass('show')
+    document.querySelector('#page-2').classList.add('show')
+
 })
 
-$("#page3-btn").click(function(){
-     // hide page 1
-    $("#page-1").removeClass('show'); // jQuery for element.classList.remove('shown')
-    $("#page-1").addClass('hidden'); // jQuery for element.cassList.add('hidden)
-    // hide page 2
-    $("#page-2").removeClass('show'); // jQuery for element.classList.remove('shown')
-    $("#page-2").addClass('hidden'); // jQuery for element.cassList.add('hidden)
+document.querySelector('#page3-btn').addEventListener('click', function(){
+    // hide all the pages
+    let pages = document.querySelectorAll('.page');
+    for (let p of pages) {
+        p.classList.remove('show')
+    }
 
     // show page 3
-    $("#page-3").removeClass('hidden');
-    $("#page-3").addClass('show')
+    document.querySelector('#page-3').classList.add('show')
+
 })
